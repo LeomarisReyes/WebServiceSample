@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:WebServiceSample" 
+             x:Class="WebServiceSample.MainPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             BackgroundColor="#E0F8E0">
+    <StackLayout> 
+        
+         <StackLayout BackgroundColor="Silver" HeightRequest="50">
+            <Label Text="AskXammy Web Service sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="20" VerticalTextAlignment="Center"/>
+        </StackLayout>
+       
+        <StackLayout Orientation="Vertical">
+            <Button x:Name="BtnCallWS" Text="Call Web Service" Clicked="BtnCallWS_Click" BackgroundColor="#71d349" TextColor="White" BorderRadius="20"/>
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="Silver"/>
+                   <Label  Text   = "ID:"  
+                           TextColor="#71d349"/>
+                   <Label  x:Name = "lblId"/>
+
+                   <Label  Text   = "Title:"  
+                           TextColor="#71d349" />
+                   <Label  x:Name = "lblTitle"/>
+
+                   <Label  Text   = "Body:"  
+                           TextColor="#71d349"/>
+                   <Label  x:Name = "lblBody"/>
+            
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>
+ 
